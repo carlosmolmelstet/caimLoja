@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>simpleStore</title>
+    <meta name="description" content="A clean, responsive storefront boilerplate with no database or backend">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/imports.min.css">
+    <link rel="stylesheet" href="css/simpleStore.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="simpleStore">
+      <nav>
+        <div class="row ">
+          <div class="col-12 navRow1">
+            <a href="#"><img class="logo" src="images/logo.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-12  navRow2">
+            <div class="carrinho">
+              <a class="button  u-pull-right simpleStore_viewCart btnCarrinho">
+                <i class="fa fa-shopping-cart"></i><span class="simpleCart_total"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="row ">
+          <div class="col-12 navRow2">
+            <div class="menu">
+              <ul>
+                <li >HOME</li>
+                <li class="active">SHOP</li>
+                <li>CONTATOS</li>
+                <li>TROCAS E DEVOLUÇÃO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- CARROSEL -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+            <img class="d-block w-100" src="images/banner1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/banner2.jpg" alt="Second slide">
+          </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+   
+            
+        <div class="simpleStore_container"></div>
+        <div class="simpleStore_cart_container"></div>
+
+        <footer>
+          <div class="row">
+            <div class="col-4 text-center">Voltar ao inicio</div>
+            <div class="col-4 text-center">pagamentos</div>
+            <div class="col-4 text-center">contatos</div>
+          </div>
+        </footer>
+    </div>
+
+    <!--------------Templates--------------->
+
+    <!-- Products View -->
+    <script id="products-template" type="x-template">
+        <div class="column tt">
+            <div class="simpleCart_shelfItem">
+                <img src="" class="item_thumb"/>
+                <div class="row">
+                    <h5 class="item_name"></h5>
+                    <div class="simpleStore_getDetail_container">
+                        <span class="item_price"></span>
+                    </div>
+                    <div class="simpleStore_getDetail_container">
+                        <a class="button u-pull-right simpleStore_getDetail">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Product Detail View -->
+    <script id="product-detail-template" type="x-template">
+        <div class="simpleCart_shelfItem simpleStore_detailView ff">
+            <a href="#" class="close view_close">&times;</a>
+
+            <div class="row ">
+                <div class="four columns">
+                    <img src="" class="item_thumb"/>
+                </div>
+                <div class="eight columns">
+                  <h5 class="item_name text-center"></h5>
+
+                    <p class="item_description"></p>
+                    <span class="item_price"></span>
+
+                    <div class="qty">
+                        <label>QTY</label>
+                        <input type="number" value="1" min="1" step="1" class="item_Quantity">
+                    </div>
+                    <div class="simpleStore_options"></div>
+                    <a class="item_add button u-pull-right" href="javascript:;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Cart View -->
+    <script id="cart-template" type="x-template">
+        <div class="simpleStore_cart">
+            <h2>Cart</h2>
+            <div class="teste">
+                <h2>gabiii</h2>
+            </div>
+            <a href="#" class="close">&times;</a>
+
+            <div class="row">
+                <div class="eight columns">
+                    <div class="simpleCart_items"></div>
+                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Empty Cart <i class="fa fa-trash-o"></i></a>
+                </div>
+                <div class="four columns">
+                    <div class="cart_info">
+                        <div class="cart_info_item cart_itemcount">Items:
+                            <div class="simpleCart_quantity"></div>
+                        </div>
+                        <div class="cart_info_item cart_taxrate">Tax Rate:
+                            <div class="simpleCart_taxRate"></div>
+                        </div>
+                        <div class="cart_info_item cart_tax">Tax:
+                            <div class="simpleCart_tax"></div>
+                        </div>
+                        <div class="cart_info_item cart_shipping">Shipping:
+                            <div class="simpleCart_shipping"></div>
+                        </div>
+                        <div class="cart_info_item cart_total"><b>Total:
+                            <div class="simpleCart_grandTotal"></div>
+                        </b></div>
+                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <!-- Error View -->
+    <script id="error-template" type="x-template">
+        <div class="error">
+            <b>Sorry, something went wrong :(</b>
+			<p class="error_text"></p>
+			<a href="#" class="close alert_close">&times;</a>
+        </div>
+    </script>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="js/simpleCart.min.js"></script>
+<script src="js/simpleStore.min.js"></script>
+
+<script src="js/config.js"></script>
+
+</html>

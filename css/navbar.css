@@ -1,0 +1,73 @@
+body {
+    max-width: 100vw;
+}
+.row {
+    margin: 0px;
+}
+
+.navRow1 {
+    width: 100vw;
+    border: 1px solid solid;
+}
+
+.navRow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 120px;
+}
+.navRow2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrinho {
+    position: absolute;
+    right: 30px;
+    margin-top: 30px;
+}
+
+.btnCarrinho {
+    padding: 0 10px;
+    border: 1px solid red;
+    color: red;
+
+    transition: background-color 0.2s;
+
+}
+
+.btnCarrinho:hover {
+    background: red;
+    color: white;
+    border: 1px solid red;
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.menu ul li{
+    padding:  10px;
+    color: red;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+.menu ul li:hover{
+    background-color: red;
+    color: white;
+}
+
+.menu ul .active{
+    background-color: red;
+    color: white;
+}
+

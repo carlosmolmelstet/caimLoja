@@ -3,19 +3,120 @@ footer {
     background-color: red;
     padding:  50px 0;
 
+    text-transform: uppercase;
     color: #fff;;
 }
+footer strong {
+    text-align: left;
+}
 
-.navFooter  {
+footer ul{
+    list-style: none;
+}
+
+footer ul li {
+    text-align: center;
+    margin-left: 30px;
+}
+
+footer ul li a{
+    color: white;
+}
+
+footer ul li a:hover{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagamentosFooter  img {
+    width: 50%;
+}
+
+.midias {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-top: 20px;
+
 }
 
-.navFooter ul {
-    margin: 0px;
+
+.fa-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    color: white;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 0 10px;
+
+    border-radius: 50%;
+    background: #38529A;
+
+    transition: 0.2s;
+}
+.fa-facebook:hover {
+    text-decoration: none;
+    color: white;  
+    transform: scale(1.05)
+}
+  
+.fa-twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    color: white;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 0 10px;
+    
+    border-radius: 50%;
+    background: #30C5F6;
+
+    transition: 0.2s;
+
 }
 
-.navFooter ul {
-    list-style: none;
+.fa-twitter:hover {
+    text-decoration: none;
+    color: white;  
+    transform: scale(1.05)
+
+}
+
+.fa-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    color: white;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 0 10px;
+    
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+    transition: 0.2s;
+
+}
+
+.fa-instagram:hover {
+    text-decoration: none;
+    color: white;  
+    transform: scale(1.05)
+
 }

@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.titulo-contato {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.social {
+  text-align: left;
+  padding-left: 50px;
+}
+.social a {
+  text-align: center;
+  
+}
+
+.social .fa {
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+  transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .social {
+    padding: 0;
+    text-align: center;
+  }
+  .contatosMidia{
+    margin-top: 50px;
+  }
+}
+
+.image img {
+  width: 80%;
+}

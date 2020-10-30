@@ -1,33 +1,31 @@
 {
 	"products" : [
 		{
-			"name" : "Awesome T-shirt",
-			"price" : "35.99",
+			"name" : "Camiseta SABBATH",
+			"price" : "59",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Tamanho" : "P, M, G, GG" }
 			],
-			"image" : "http://upload.wikimedia.org/wikipedia/commons/c/c6/Grey_Tshirt.jpg",
-			"description" : "This is a very awesome grey T-shirt"
+			"image" : "images/camisa 1.jpg",
+			"description" : "Camiseta em malha 100% algodão, estampada no tecido por serigrafia, com toque aveludado e tecido encorpado. Possui mangas curtas e gola careca."
 		},
 		{
-			"name" : "Cool T-shirt",
-			"price" : "15.99",
+			"name" : "Camiseta GOD BLESS AMERICA",
+			"price" : "59",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" },
-				{ "Color" : "Blue,Red" },
-			    { "OneOfAKind" : true }
+				{ "Tamanho" : "P, M, G, GG" }
 			],
-			"image" : "http://upload.wikimedia.org/wikipedia/commons/2/24/Blue_Tshirt.jpg",
-			"description" : "This is a really cool blue T-shirt"
+			"image" : "images/camisa 2.jpg",
+			"description" : "Camiseta em malha 100% algodão, estampada no tecido por serigrafia, com toque aveludado e tecido encorpado. Possui mangas curtas e gola careca."
 		},
 		{
-			"name" : "Fun T-shirt",
-			"price" : "esgotado",
+			"name" : "Camiseta RENEGADE",
+			"price" : "59",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Tamanho" : "P, M, G, GG" }
 			],
-			"image" : "http://upload.wikimedia.org/wikipedia/commons/c/c6/Grey_Tshirt.jpg",
-			"description" : "This is another fun grey T-shirt"
-		}	
+			"image" : "images/camisa 3.jpg",
+			"description" : "Camiseta em malha 100% algodão, estampada no tecido por serigrafia, com toque aveludado e tecido encorpado. Possui mangas curtas e gola careca."
+		}
 	]
 }

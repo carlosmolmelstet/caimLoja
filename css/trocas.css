@@ -1,0 +1,17 @@
+.problema {
+  font-weight: 700;
+  margin-left: 2vw;
+}
+
+p {
+  text-justify: auto;
+  margin-left: 2vw;
+}
+
+h2 {
+  margin-left: 2vw;
+}
+.imagem img {
+  width: 100%;
+  max-height: 500px;
+}

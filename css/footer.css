@@ -1,14 +1,12 @@
 footer {
     margin-top: 30px;
-    background-color: red;
-    padding:  50px 0;
+    background-image: url(../images/footer2.png);
+    padding:  100px 0;
 
     text-transform: uppercase;
     color: #fff;;
 }
-footer strong {
-    text-align: left;
-}
+
 
 footer ul{
     list-style: none;
@@ -24,13 +22,14 @@ footer ul li a{
 }
 
 footer ul li a:hover{
-    color: black;
+    color: red;
     cursor: pointer;
     text-decoration: none;
 }
 
 .pagamentosFooter  img {
     width: 50%;
+    margin-top: -20px;
 }
 
 .midias {
@@ -42,8 +41,7 @@ footer ul li a:hover{
 
 }
 
-
-.fa-facebook {
+.midias .fa-facebook {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,13 +59,13 @@ footer ul li a:hover{
 
     transition: 0.2s;
 }
-.fa-facebook:hover {
+.midias .fa-facebook:hover {
     text-decoration: none;
     color: white;  
     transform: scale(1.05)
 }
   
-.fa-twitter {
+.midias .fa-twitter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,14 +85,14 @@ footer ul li a:hover{
 
 }
 
-.fa-twitter:hover {
+.midias .fa-twitter:hover {
     text-decoration: none;
     color: white;  
     transform: scale(1.05)
 
 }
 
-.fa-instagram {
+.midias .fa-instagram {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,9 +112,23 @@ footer ul li a:hover{
 
 }
 
-.fa-instagram:hover {
+.midias .fa-instagram:hover {
     text-decoration: none;
     color: white;  
     transform: scale(1.05)
 
+}
+
+
+
+@media(max-width: 767px) {
+    footer ul li {
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    .menuFooter {
+        margin-left: -30px;
+
+    }
 }

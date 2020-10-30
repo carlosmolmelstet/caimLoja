@@ -1,11 +1,25 @@
 body {
     max-width: 100vw;
+    overflow-x: hidden;
 }
+button, input, textarea, summary {
+    outline: none;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #495057;
+    outline: 0;
+    box-shadow: none;
+}
+
 .row {
     margin: 0px;
 }
 
 .navRow1 {
+    margin-top: 10px;
     width: 100vw;
     border: 1px solid solid;
 }
@@ -25,39 +39,38 @@ body {
     align-items: center;
 }
 
+
 .carrinho {
     position: absolute;
-    right: 30px;
-    margin-top: 30px;
+    right: 10px;
+    border-radius: 0px !important;
+    transition:  background-color 0.2s;
 }
-
-.btnCarrinho {
-    padding: 0 10px;
-    border: 1px solid red;
-    color: red;
-
-    transition: background-color 0.2s;
-
-}
-
 .btnCarrinho:hover {
-    background: red;
-    color: white;
-    border: 1px solid red;
-
+    background-color: red;
+    color: #fff !important;
+    text-decoration: none;
+    border: none;
 }
+
+
+
+.menu  {
+    display: flex;
+}
+
 
 .menu ul {
     margin-top: 10px;
     list-style: none;
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 4px;
     padding-bottom: 0px;
 }
 
 .menu ul li a{
     padding:  10px;
-    color: red;
+    color:  #d00000;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
@@ -65,15 +78,14 @@ body {
     transition: background-color 0.2s;
 }
 .menu ul .active {
-    background-color: red;
+    background-color:  #d00000;
     color: white;
 }
 
 .menu ul li a:hover{
-    background-color: red;
+    background-color:  #d00000;
     color: white;
 }
-
 
 .rowCarosel {
     max-width: 100vw;
@@ -96,4 +108,25 @@ body {
 .galeria .foto{
     width: 100%;
     margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+   
+@media(max-width: 500px) {
+    .menu ul li span{
+        display: none;
+    }
+}
+   
+@media(max-width: 350px) {
+    .menu ul li span{
+        display: none;
+    }
+
+    .navRow2 {
+        padding-left: 0px;
+    }
 }

@@ -42,27 +42,29 @@
         <div class="row ">
           <div class="col-12 navRow1">
             <a href="#"><img class="logo" src="images/logo.svg" alt=""></a>
+            <div class="carrinho ml-auto">
+              <a href="" class="button  u-pull-right simpleStore_viewCart btnCarrinho">
+                <i class="fa fa-shopping-cart"></i><span class="simpleCart_total"></span>
+            </a>
+        </div>
           </div>
         </div>
         <div class="row ">
           <div class="col-12  navRow2">
-            <div class="carrinho">
-              <a class="button  u-pull-right simpleStore_viewCart btnCarrinho">
-                <i class="fa fa-shopping-cart"></i><span class="simpleCart_total"></span>
-            </a>
           </div>
-        </div>
+             
       </div>
         <div class="row ">
-          <div class="col-12 navRow2">
+          <div class="col-12 navRow2 gg">
             <div class="menu">
               <ul>
                 <li ><a href="index.html">home</a></li>
                 <li><a class="active" href="shop.html">shop</a></li>
-                <li><a href="contatos.html">contatos</a></li>
+                <li><a href="contato.html">contatos</a></li>
                 <li><a href="trocas.html">trocas e devoluçoes</a></li>
               </ul>
             </div>
+               
           </div>
         </div>
     </nav>
@@ -91,47 +93,49 @@
         <div class="simpleStore_cart_container"></div>
 
          <!-- FOOTER -->
-    <footer>
-      <div class="row  text-center">
-       <div class="col-md-4 col-sm-12">
-          <ul class="menuFooter">
-            <ul><h3>Navegação</h3></ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="shop.html">shop</a></li>
-            <li><a href="contatos.html">contatos</a></li>
-            <li><a href="trocas.html">trocas e devoluçoes</a></li>
-          </ul>
-       </div>
-       <div class="col-md-4 col-sm-12 pagamentosFooter">
-         <h3>Pagamentos</h3>
-         <img src="images/bandeira-dos-cartoes-de-credito.png" alt="">
-       </div>
-       <div class="col-md-4 col-sm-12">
-         <h3>contatos</h3>
-         <div class="midias">
-           <a href="#" class="fa fa-facebook"></a>
-           <a href="#" class="fa fa-twitter"></a>
-           <a href="#" class="fa fa-instagram"></a>
+         <footer>
+          <div class="row  text-center">
+           <div class="col-md-4 col-sm-12">
+              <ul class="menuFooter">
+                <li><h3>Navegação</h3></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="contatos.html">contatos</a></li>
+                <li><a href="trocas.html">trocas <span> e devoluçoes</span></a></li>
+              </ul>
+           </div>
+           <div class="col-md-4 col-sm-12 pagamentosFooter">
+             <h3>Pagamentos</h3>
+             <img src="images/bandeira-dos-cartoes-de-credito.png" alt="">
+           </div>
+           <div class="col-md-4 col-sm-12">
+             <h3>contatos</h3>
+             <div class="midias">
+               <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-twitter"></a>
+               <a href="#" class="fa fa-instagram"></a>
+              </div>
+           </div>
           </div>
-       </div>
-      </div>
-    </footer>
+        </footer>
     </div>
 
     <!--------------Templates--------------->
 
     <!-- Products View -->
     <script id="products-template" type="x-template">
-        <div class="column tt">
-            <div class="simpleCart_shelfItem">
+        <div class="col-md-4 col-sm-12 tt">
+            <div class="simpleCart_shelfItem cardProduct">
                 <img src="" class="item_thumb"/>
-                <div class="row">
-                    <h5 class="item_name"></h5>
+                <div class="row my-menuProduct">
+                  <div class="PW-titulo">
+                    <h5 class="item_name"></h5> 
+                  </div>
                     <div class="simpleStore_getDetail_container">
-                        <span class="item_price"></span>
+                      <span class="rs">R$:</span>  <span class="item_price"></span>
                     </div>
                     <div class="simpleStore_getDetail_container">
-                        <a class="button u-pull-right simpleStore_getDetail">Details</a>
+                        <a class="button simpleStore_getDetail vermais">VER MAIS</a>
                     </div>
                 </div>
             </div>
@@ -140,66 +144,84 @@
 
     <!-- Product Detail View -->
     <script id="product-detail-template" type="x-template">
-        <div class="simpleCart_shelfItem simpleStore_detailView ff">
-            <a href="#" class="close view_close">&times;</a>
+      <div class="container ">
 
-            <div class="row ">
-                <div class="four columns">
-                    <img src="" class="item_thumb"/>
+        <div class="simpleCart_shelfItem simpleStore_detailView mt-5">
+          <a href="#" class="close view_close">&times;</a>
+
+          <div class="row ">
+            <div class="col-lg-6 col-sm-12">
+              <img src="" class="item_thumb"/>
                 </div>
-                <div class="eight columns">
-                  <h5 class="item_name text-center"></h5>
-
-                    <p class="item_description"></p>
-                    <span class="item_price"></span>
-
+                <div class="col-lg-6 col-sm-12">
+                  <div class="PD-titulo">
+                    <h5 class="item_name "></h5>
+                  </div>
+                  <div class="PD-preco">
+                    <p class="preco">R$:</p> 
+                   <span class="item_price preco "></span>
+                  </div>
+                  <div class="quaditade-tamanho">
                     <div class="qty">
-                        <label>QTY</label>
-                        <input type="number" value="1" min="1" step="1" class="item_Quantity">
+                      <label>Quantidade</label>
+                      <input type="number" value="1" min="1" step="1" class="item_Quantity">
                     </div>
                     <div class="simpleStore_options"></div>
-                    <a class="item_add button u-pull-right" href="javascript:;">Add to Cart</a>
+                  </div>
+                  <br>
+                  <div class="card">
+                    <a class="item_add button addCard " href="javascript:;">ADICIONAR NO CARRINHO</a>
+                  </div>
+                  <p class="item_description"></p>
+                  <p>Medidas: (Largura x Altura)
+                    <br>
+                    P = 50 x 70cm
+                    <br>
+                    M = 52 x 72cm
+                    <br>
+                    G = 54 x 74cm
+                    <br>
+                    GG = 56 x 77cm</p>
                 </div>
+              </div>
             </div>
-        </div>
-    </script>
-
+          </div>
+          </script>
+          
     <!-- Cart View -->
     <script id="cart-template" type="x-template">
-        <div class="simpleStore_cart">
-            <h2>Cart</h2>
-            <div class="teste">
-                <h2>gaasdasdbiii</h2>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="simpleStore_cart">
+            <h2><i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Carrinho de compras</h2>
             <a href="#" class="close">&times;</a>
-
+            
             <div class="row">
-                <div class="eight columns">
-                    <div class="simpleCart_items"></div>
-                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Empty Cart <i class="fa fa-trash-o"></i></a>
-                </div>
-                <div class="four columns">
-                    <div class="cart_info">
+              <div class="col-md-12 col-lg-8">
+                <div class="simpleCart_items"></div>
+                <a href="javascript:;" class="simpleCart_empty u-pull-left">Limpar carrinho <i class="fa fa-trash-o"></i></a>
+              </div>
+                  <div class="col-md-12 col-lg-4 kl">
+                      <div class="cart_info">
                         <div class="cart_info_item cart_itemcount">Items:
-                            <div class="simpleCart_quantity"></div>
+                          <div class="simpleCart_quantity"></div>
                         </div>
-                        <div class="cart_info_item cart_taxrate">Tax Rate:
-                            <div class="simpleCart_taxRate"></div>
-                        </div>
-                        <div class="cart_info_item cart_tax">Tax:
-                            <div class="simpleCart_tax"></div>
-                        </div>
-                        <div class="cart_info_item cart_shipping">Shipping:
-                            <div class="simpleCart_shipping"></div>
+                        
+                        <div class="cart_info_item cart_shipping">Frete para Joinville: R$:10,00
+                          
                         </div>
                         <div class="cart_info_item cart_total"><b>Total:
-                            <div class="simpleCart_grandTotal"></div>
-                        </b></div>
-                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                          <div class="simpleCart_grandTotal"></div>
+                            </b></div>
+                            <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Checkout <i class="fa fa-arrow-right"></i></a>
+                          </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </script>
 
     <!-- Error View -->

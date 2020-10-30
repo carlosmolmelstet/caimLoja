@@ -92,6 +92,14 @@ button, input, textarea, summary {
 }
 .carousel {
     margin-top: 0px;
+    /* min-width: 400px; */
+   /* object-fit: cover;  */
+}
+
+.carousel img {
+    margin-top: -10px;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 
@@ -113,18 +121,43 @@ button, input, textarea, summary {
 a {
     text-decoration: none;
 }
+.carrinhoSmall{
+    display: none;
+}
 
    
 @media(max-width: 500px) {
     .menu ul li span{
         display: none;
     }
+
+    .navRow1 .carrinho {
+        display: none;
+    }
+    .carrinhoSmall{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .carrinho {
+        margin-top: 10px;
+        position: initial;
+    }
+    .carrinho a{
+        margin-bottom: 10px;
+    }
+
+    
 }
    
 @media(max-width: 350px) {
     .menu ul li span{
         display: none;
     }
+    .menu ul {
+        padding-left: 5px;
+    }
+    
 
     .navRow2 {
         padding-left: 0px;

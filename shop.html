@@ -41,12 +41,19 @@
       <nav>
         <div class="row ">
           <div class="col-12 navRow1">
-            <a href="#"><img class="logo" src="images/logo.svg" alt=""></a>
-            <div class="carrinho ml-auto">
+            <a href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
+            <div class="carrinho  ml-auto">
               <a href="" class="button  u-pull-right simpleStore_viewCart btnCarrinho">
                 <i class="fa fa-shopping-cart"></i><span class="simpleCart_total"></span>
-            </a>
-        </div>
+              </a>
+            </div>
+          </div>
+          <div class="row carrinhoSmall text-center">
+            <div class="carrinho ">
+              <a href="" class="button  u-pull-right simpleStore_viewCart btnCarrinho">
+                <i class="fa fa-shopping-cart"></i><span class="simpleCart_total"></span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="row ">
@@ -61,7 +68,7 @@
                 <li ><a href="index.html">home</a></li>
                 <li><a class="active" href="shop.html">shop</a></li>
                 <li><a href="contato.html">contatos</a></li>
-                <li><a href="trocas.html">trocas e devoluçoes</a></li>
+                <li><a href="trocas.html">trocas <span> e devoluçoes</span></a></li>
               </ul>
             </div>
                
@@ -69,7 +76,7 @@
         </div>
     </nav>
     <!-- CARROSEL -->
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls " class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
             <img class="d-block w-100" src="images/banner1.jpg" alt="First slide">
@@ -78,19 +85,11 @@
             <img class="d-block w-100" src="images/banner2.jpg" alt="Second slide">
           </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+         
         </div>
    
-            
-        <div class="simpleStore_container"></div>
-        <div class="simpleStore_cart_container"></div>
+          <div class="simpleStore_container"></div>
+          <div class="simpleStore_cart_container"></div>
 
          <!-- FOOTER -->
          <footer>
@@ -100,7 +99,7 @@
                 <li><h3>Navegação</h3></li>
                 <li><a href="index.html">home</a></li>
                 <li><a href="shop.html">shop</a></li>
-                <li><a href="contatos.html">contatos</a></li>
+                <li><a href="contato.html">contatos</a></li>
                 <li><a href="trocas.html">trocas <span> e devoluçoes</span></a></li>
               </ul>
            </div>
@@ -108,12 +107,11 @@
              <h3>Pagamentos</h3>
              <img src="images/bandeira-dos-cartoes-de-credito.png" alt="">
            </div>
-           <div class="col-md-4 col-sm-12">
+           <div class="col-md-4 col-sm-12 contatosmidia">
              <h3>contatos</h3>
              <div class="midias">
-               <a href="#" class="fa fa-facebook"></a>
-               <a href="#" class="fa fa-twitter"></a>
-               <a href="#" class="fa fa-instagram"></a>
+               <a target="_blake" href="https://www.facebook.com/caim.brand" class="fa fa-facebook"></a>
+               <a target="_blake" href="https://www.instagram.com/caim.brand/" class="fa fa-instagram"></a>
               </div>
            </div>
           </div>
@@ -144,7 +142,7 @@
 
     <!-- Product Detail View -->
     <script id="product-detail-template" type="x-template">
-      <div class="container ">
+      <div class="container mt-5 ">
 
         <div class="simpleCart_shelfItem simpleStore_detailView mt-5">
           <a href="#" class="close view_close">&times;</a>
@@ -169,7 +167,7 @@
                     <div class="simpleStore_options"></div>
                   </div>
                   <br>
-                  <div class="card">
+                  <div class="card addcardbtn">
                     <a class="item_add button addCard " href="javascript:;">ADICIONAR NO CARRINHO</a>
                   </div>
                   <p class="item_description"></p>
@@ -190,7 +188,7 @@
           
     <!-- Cart View -->
     <script id="cart-template" type="x-template">
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-12">
             <div class="simpleStore_cart">
@@ -246,6 +244,8 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
 <script src="js/simpleStore.min.js"></script>
+<script src="js/addcard.js"></script>
+
 
 <script src="js/config.js"></script>
 
